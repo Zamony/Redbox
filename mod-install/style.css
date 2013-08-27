@@ -1,0 +1,25 @@
+body{
+	
+}
+.content{
+	width: 450px;
+	min-height: 350px;
+	margin: -175px 0 0 -225px;
+	padding: 15px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: linear-gradient(#F0F0F0, #FEFEFE);
+}
+.logo{
+	display: table-cell;
+	height:80px;
+	vertical-align: middle;
+}
+.logo span{
+	line-height: 80px;
+	font-size: 50px;
+	font-family: Open Sans, Verdana;
+}

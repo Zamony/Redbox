@@ -1,0 +1,67 @@
+body{
+	font-family: 'Open Sans';
+}
+/*Navbar*/
+.navbar { border-radius: 0 !important; }
+.navbar-brand {
+	background: url(../img/redbox-big-light.png) no-repeat !important;
+	background-size: 180px 40px !important;
+    height: 40px;
+    width: 180px;
+    margin: 5px 0;
+}
+
+/*Info-block style*/
+.redblock h4{
+	margin-top: 0;
+}
+.redblock{
+	margin-top:20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.redblock:first-child{
+	margin-top: 0;
+}
+.redblock:last-child{
+	border: none !important;
+}
+
+/*Editor style*/
+ #editor {overflow:scroll; max-height:300px}
+ #post-options .row{
+ 	margin-top:15px !important;
+ }
+
+ /*Login form style*/
+ .login{
+ 	background: url(../img/silver_scales.png);
+ 	font-size: 2em;
+ }
+ .auth {
+ 	width: 420px;
+	height: 420px;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -210px 0 0 -210px;
+	padding: 15px 20px;
+ }
+ .auth form{
+ 	margin-top: 20px;
+ 	padding:auto 30px !important;
+ }
+ .auth button[type="submit"]{
+ 	font-size: 1.2em;
+ 	background: #d82a20;
+ 	padding:0 !important;
+ 	height: 2em;
+ 	margin-top: 0.7em;
+ }
+ .auth input{
+ 	margin-bottom: 10px;
+ }
+ #tags, #category{
+ 	margin-top:10px;
+ }

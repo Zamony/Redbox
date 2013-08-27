@@ -1,0 +1,671 @@
+/*
+  Theme Name: Bobwobwob
+  Theme URI: http://bobwobwob.ru/bobwobwob-theme/
+  Description: Легкая HTML5 тема, адаптируется под iPad. Только русская локализация, содержит два удобных shortcode для YouTube и SoundCloud.
+  Author: Борисов Василий (Yuhenobi)
+  Version: 1.0
+  License: GNU General Public License
+  Tags: black, white, orange, two-columns, fixed-width, custom-menu, ipad, retina
+*/
+
+.cf {
+  *zoom: 1;
+}
+
+.cf:before,
+.cf:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.cf:after {
+  clear: both;
+}
+
+* {
+  -webkit-text-size-adjust:none;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 100%;
+  height: 100%;
+  background: url('assets/img/bg-subhead.png');
+}
+
+a { 
+  color: #333;
+}
+
+#wrapper {
+  width: 960px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 1px 10px #cccccc;
+  margin: 0 auto;
+  padding: 0;
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  border-radius: 3px;
+}
+
+/* ============ Header ============= */
+
+#header {
+  padding: 30px 0 20px 0;
+  width: 960px;
+  margin: 0 auto;
+}
+
+  #header .nav {
+    padding: 0 40px;
+  }
+
+    #header .nav .logo {
+      float: left;
+    }
+
+      #header .nav .logo {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 1.8em;
+        line-height: 1em;
+      }
+
+        #header .nav .logo a {
+          text-decoration: none;
+          font-size: .9em;
+          font-family: 'Righteous';
+          color: #333;
+          text-shadow: 0 1px 0 white;
+        }
+
+        #header .nav .logo a:hover {
+          color: #555;
+        }
+
+      #header .nav .menu {
+        float: right;
+        font-weight: 600;
+        list-style: none;
+        margin: 0 -10px 0 0;
+        padding: 0;
+        display: block;
+      }
+
+.active {
+  background: #f5f5f5;
+}
+
+#header .nav .menu li {
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+
+#header .nav .menu li a {
+  display: block;
+  padding: 7px 10px;
+  color: #333;
+  font-size: .9em;
+  font-weight: 400;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+#header .nav .menu li a:hover {
+  background: #ff9900;
+  color: #ffffff;
+}
+
+#header .nav .menu ul {
+  position: absolute;
+  top: 33px;
+  left: 0;
+  z-index: 900;
+  display: none;
+  list-style: none;
+  padding: 0;
+  float: left;
+}
+
+#header .nav .menu ul li {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+
+#header .nav .menu ul li a {
+  padding: 8px 12px;
+  width: auto;
+  background: #f5f5f5;
+  font-size: .75em;
+}
+
+#header .nav .menu ul li a:hover {
+  background: #ff9900;
+  color: #fff;
+  text-decoration: underline;
+} 
+
+/* ============ Breadcrumbs ============= */
+
+.breadcrumbs {
+  margin: 0 auto;
+  color: #bbb;
+  font-size: 0.75em;
+  padding: 10px 40px 0px 40px;
+}
+
+  .breadcrumbs a {
+    color: #bbb;
+  }
+
+  .breadcrumbs a:hover {
+    color: #ff9900;
+  }
+
+  .breadcrumbs .divider {
+    margin: 0 5px;
+  }
+
+/* ============ Feed ============= */
+
+.feed {
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+  .feed section {
+    width: 70%;
+    float: left;
+  }
+
+  .feed aside {
+    width: 30%;
+    margin: 0;
+    float: right;
+  }
+
+    section h2, section h3, section h4, aside h3 {
+      margin: 0 0 1.1em 0;
+      font-size: 1.1em;
+      font-weight: 400;
+    }
+
+    aside .popular {
+      margin: 0;
+      
+    }
+
+    aside .popular article.thumb-little {
+      margin: 0 0 5px 0;
+      padding: 0;
+    }
+
+    aside .popular article.thumb-little img {
+      float: left; 
+      margin: 0 16px 0 0;
+    }
+
+    aside .popular article.thumb-little .divider {
+      margin: 0 5px;
+    }
+
+    aside .popular article.thumb-little h4 {
+      font-size: .75em;
+      font-weight: 400;
+      line-height: 1.6em;
+      margin: 0 0 .8em 0;
+      color: #333;
+      max-width: 280px;
+    }
+
+    aside .popular article.thumb-little p {
+      font-size: .75em;
+      color: #555;
+      font-weight: 400;
+      line-height: 1.6em;
+      margin: 0 0 1.6em 0;
+    }
+
+    aside .popular article.thumb-little span.genre {
+      margin: 0 10px 0 0;
+    }
+
+    aside .popular article.thumb-little span.genre a {
+      padding: 4px 8px;
+      background: #ff9900;
+      margin: 0;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: .9em;
+    }
+
+    aside .popular article.thumb-little span.genre a:hover {
+      display: block;
+      padding: 4px 8px;
+      background: #ffaa00;
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    aside .popular article.thumb-little span.date {
+      color: #999;
+      font-size: .7em;
+      display: block;
+      margin: 1px 0 0 0;
+    }
+
+    aside .widget {
+      margin: 0 0 25px 0;
+    }
+
+    aside .widget h3 {
+      margin: 0 0 .7em 0;
+    }
+
+    /* ===  Mailchimp Widget  === */
+
+    aside .widget p, aside .widget .error {
+      font-size: .75em;
+      color: #F30;
+      margin: 0 0 1.2em 0;
+      line-height: 1.6em;
+    }
+
+    aside .widget p {
+      color: #666;
+    }
+
+    aside .widget #ns_widget_mailchimp-email-2 {
+      height: 23px;
+      border: 1px solid #CCC;
+      margin: 0 10px 0 0;
+      width: 140px;
+      padding: 0 0 0 5px;
+      font-size: .8em;
+      box-shadow: 0 3px 15px #f5f5f5 inset;
+    }
+
+    aside .widget .button {
+      background-color: #ffffff;
+      background-repeat: repeat-x;
+      background-image: -khtml-gradient(linear, left top, left bottom, from(#ffffff), to(#eeeeee));
+      background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+      background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+      background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+      background-image: -o-linear-gradient(top, #ffffff, #eeeeee);
+      background-image: linear-gradient(top, #ffffff, #eeeeee);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-shadow: 0 0 0;
+      font-size: .75em;
+      color: #333; 
+      text-decoration: none;
+      padding: 4px 8px;
+      width: auto;
+      height: auto;
+      margin: 0;
+      cursor: pointer;
+    }
+
+    /* ===  Tagcloud Widget  === */
+
+    aside .tagcloud a {
+      font-size: .75em !important;
+    }
+
+
+    .content aside .artist {
+      margin: 0 0 1.5em 0; 
+    }
+
+    .content aside .artist p {
+      margin: 0 0 1em 0;
+    }
+
+    .content aside .artist span {
+      display: block;
+      font-size: .8em;
+      line-height: 1.7em;
+    }
+
+  .feed section article.thumb-medium {
+    width: 50%;
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 0;
+    position: relative;
+  }
+
+    .feed section article.thumb-medium h4 {
+    font-size: .9em;
+    font-weight: 400;
+    margin: .5em 0 0 0;
+    color: #333;
+    max-width: 290px;
+  }
+
+  .feed section article.thumb-medium span.date {
+    color: #888;
+    font-size: .7em;
+    display: block;
+    margin: .7em 0 0 0;
+  }
+
+  .feed section article.thumb-medium p {
+    color: #555;
+    font-size: .75em;
+    margin: .9em 0 .2em 0;
+    max-width: 280px;
+    line-height: 1.7em;
+  }
+
+  .feed section article.thumb-medium .genre {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .feed section article.thumb-medium .genre a {
+    display: block;
+    padding: 6px 10px;
+    background: #ff9900;
+    color: #ffffff;
+    font-size: .8em;
+    text-decoration: none;
+  }
+
+  .feed section article.thumb-medium .genre a:hover {
+    display: block;
+    padding: 6px 10px;
+    background: #ffaa00;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+
+  .feed section article.thumb-little {
+    width: 50%;
+    float: left;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+
+  .feed section article.thumb-little img {
+    float: left; 
+    margin: 0 12px 0 0;
+  }
+
+  .feed section article.thumb-little h4 {
+    font-size: .75em;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+    max-width: 280px;
+  }
+
+  .feed section article.thumb-little span.genre {
+    margin: 0 9px 0 0;
+  }
+
+  .feed section article.thumb-little span.genre a {
+    padding: 1px 5px;
+    background: #ff9900;
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: .9em;
+  }
+
+  .feed section article.thumb-little span.genre a:hover {
+    display: block;
+    padding: 3px 5px;
+    background: #ffaa00;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .feed section article.thumb-little span.date {
+    color: #888;
+    font-size: .6em;
+    display: block;
+    margin: 2px 0 0 0;
+  }
+
+/* ============ Post ============= */
+
+section article {
+  height: 286px;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+  .content section {
+    width: 65%;
+    float: left;
+  }
+
+  .content aside {
+    width: 30%;
+    margin: 0;
+    float: right;
+  }
+
+  .content section h1 {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0 0 1.1em 0;
+    color: #333;
+  }
+
+  .content section iframe {
+    margin-bottom: 1em;
+  }
+
+  .content section .post-info {
+    border-top: 1px solid #DDDDDD;
+    color: #888;
+    margin: .6em 0 2em 0;
+  }
+
+  .content section .post-info .post-date {
+    margin: 0;
+    display: inline;
+  }
+
+  .content section .tag {
+    font-size: 0.75em;
+  }
+
+  .content section img {
+    margin: 0 0 1.6em 0;
+  }
+
+  .content section ul, .content section ol {
+    font-size: .8em;
+    padding: 0 0 0 24px;
+    color: #555;
+  }
+
+  .content section p, .content aside p  {
+    font-size: .75em;
+    color: #555;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin: 0 0 1.6em 0;
+  }
+
+  .content section .navpost {
+    font-size: .8em;
+    margin: 5px 0 15px;
+  }
+
+    .content section .navpost .prev {
+      float: left;
+      max-width: 270px;
+    }
+
+    .content section .navpost .next {
+      float: right;
+      max-width: 270px;
+    }
+
+.youtube {
+  padding: 7px;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  background: #f5f5f5;
+}
+
+/* ============ Breadcrumbs ============= */
+
+  section .pagination {
+    clear: both;
+  }
+
+  section .pagination ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  section .pagination ul li {
+    display: inline;
+    margin: 0 5px 0 0;
+  }
+
+  section .pagination ul li a {
+    background: #eee;
+    padding: 3px 9px;
+    color: #333;
+    text-decoration: none;
+    font-size: .9em;
+  }
+
+  section .pagination ul li a:hover {
+    background: #ddd;
+    padding: 3px 9px;
+    color: #333;
+    text-decoration: none;
+    font-size: .9em;
+  }
+
+  section .pagination ul li span.current {
+    background: #F90;
+    padding: 3px 9px;
+    color: white;
+    font-size: .9em;
+  }
+
+/* ============ Footer ============= */
+
+#footer {
+  width: 960px;
+  margin:0 auto;
+  padding: 0;
+  clear: both;
+  position: relative;
+  height: 50px;
+}  
+
+  #footer .wrap {
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: center;
+  }
+
+  #footer .bottommenu {
+    float: right;
+    list-style: none;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+    #footer .bottommenu li {
+      display: inline-block;
+      margin: 0 10px 0 0;
+    }
+
+      #footer .bottommenu li a {
+        font-size: 0.75em;
+        color: #666;
+      }
+
+      #footer .bottommenu li a:hover {
+        color: #ffaa00;
+      }
+
+  #footer .copyrights {
+    float: left;
+    margin: 0;
+    font-size: 0.75em;
+    color: #666;
+  }
+
+
+@media screen and (max-device-width: 1024px) and (orientation:landscape) {
+
+#wrapper {
+  width: 100%;
+}
+
+#header {
+  width: 960px;
+}
+
+  #header .nav {
+    padding: 0 30px;
+  }
+
+#footer {
+  width: 960px;
+}
+
+  #footer .wrap {
+    padding: 20px 30px;
+  }
+
+} 
+
+@media screen and (max-device-width: 768px) and (orientation:portrait) {
+
+#wrapper {
+  width: 100%;
+}
+
+#header {
+  width: 960px;
+}
+
+  #header .nav {
+    padding: 0 30px;
+  }
+
+#footer {
+  width: 960px;
+}
+
+  #footer .wrap {
+    padding: 20px 30px;
+  }
+
+} 
